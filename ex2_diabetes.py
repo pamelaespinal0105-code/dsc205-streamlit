@@ -40,6 +40,7 @@ ax.set_xlabel("Glucose Level")
 ax.set_ylabel("Number of Patients")
 st.pyplot(fig)
 
-# 6. Show the filtered table
-st.subheader("Raw Data (Filtered)")
-st.dataframe(filtered_df)
+# 6. Optional raw data display
+if st.checkbox("Show raw data"):
+    st.subheader("Raw Data (Filtered)")
+    st.dataframe(filtered_df)
