@@ -3,8 +3,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # 1. Load the data
-tips_url = "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/tips.csv"
-df = pd.read_csv(tips_url)
+URL = ('https://raw.githubusercontent.com/iantonios/'
+       'dsc205/refs/heads/main/tips.csv')
+
+df = pd.read_csv(URL)
 
 # 2. Title and Description
 st.title('Restaurant Tips')
